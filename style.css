@@ -1,0 +1,150 @@
+
+.container{
+    display: flex;
+    
+}
+.container__spaceleft{
+    width: 300px;
+    background-color: rgb(0, 0, 95);
+    color: white;
+    font-family: sans-serif;
+}
+.container__img img{
+    width: 100%;
+}
+.container__text{
+    padding-left: 7px;
+    padding-top: 5px;
+}
+
+
+
+
+.container__spaceright{
+    max-width: 700px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+.container__header{
+    background-color: blue;
+    height: 45px;
+    width: 100%;
+}
+.container__nav{
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.container__b{
+    font-size: 20px;
+    background-color: darkblue;
+    transition: .5s;
+    padding: 8px 12px;
+    border-radius: 3px;
+    color: white;
+}
+
+.container__ulnav{
+    display: flex;
+    list-style: none;
+
+    
+}
+.container__menu-nav{
+    font-size: 15px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    
+}
+.container__menu-nav:hover{
+    background-color: darkblue;
+    transition: .5s;
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+.container__button-menu{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 20px;
+    padding: 8px 12px;
+    cursor: pointer;
+    display: none;
+}
+.nombre{
+    font-size: 50px;
+}
+.container__ulcontacto{
+    list-style-type: none;
+    padding: 0;
+}
+.icono{
+    padding-right: 30px;
+}
+h1{
+    padding: 0;
+    margin: 0;
+}
+h4{
+    font-family: sans-serif;
+    border-top: solid 2px black;
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 550px){
+
+    .container__b{
+        font-size: 15px;
+        background-color: darkblue;
+        padding: 8px 12px;
+        border-radius: 3px;
+        color: white;
+    }
+    .container__header{
+        background-color: blue;
+        height: 45px;
+        min-width: 320px;
+    }
+    .container__ulnav{
+        flex-direction: column;
+        list-style: none;
+        background-color: darkblue;
+        position:absolute;
+        top: 45px;
+        width: 320px;
+        align-items: center;
+        padding: 0;
+        opacity: 0;
+    }
+    .container__ulnav li{
+        margin: 5px;
+        padding: 5px 0;
+    }
+    .container__menu-nav{
+        font-size: 15px;
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        
+    }
+    .container__menu-nav:hover{
+        opacity: .5;
+        transition: .5s;
+
+    }
+    .container__button-menu{
+        display: block;
+    }
+    .container__ulnav_visible{
+        opacity: 1;
+        transition: .6s;
+        
+    }
+    .nombre{
+        font-size: 40px;
+        margin-top: 120px;
+    }
+}
